@@ -1,0 +1,8 @@
+<h1>Fala seus Noobs, sejam bem vindos ao nosso blog</h1>
+<p>Aqui está alguns de nossos relatos de noobs</p>
+
+<% @posts.each do |post| %>
+    <h2> <%= link_to post.titlle, post %> </h2>
+<% end %>
+
+<%= link_to "Posts", posts_path%>
