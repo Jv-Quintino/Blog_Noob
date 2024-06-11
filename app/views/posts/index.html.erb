@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts de Noob</h1>
+
+<h2>Aqui você encontra vários posts de histórias de noobs do mundo inteiro!!</h2>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Ver Post", post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Novo post Noob", new_post_path %>
