@@ -1,6 +1,17 @@
 body {
     background: linear-gradient(45deg, #636ceb, #7c7c7c);
+    text-align: center; /* Centraliza todo o texto no corpo */
   }
 h1, h2, h3 {
     color: black;
 }
+a {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    color: #ffdd57; 
+    text-decoration: underline; 
+  }
+  
