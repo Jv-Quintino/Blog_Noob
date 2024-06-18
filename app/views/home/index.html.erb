@@ -1,9 +1,23 @@
-<h1>Blog Noob</h1>
-<h2>Aqui você encontra vários posts de noobs de todo o planeta!</h2>
-<p></p>
-<h3>Destaques</h3>
-<% @posts.each do |post| %>
-    <h2> <%= link_to post.titlle, post %> </h2>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-<%= link_to "Posts", posts_path%>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <h1>Blog Noob</h1>
+  <h2>Aqui você encontra vários posts de noobs de todo o planeta!</h2>
+  <p></p>
+  <h3>Destaques</h3>
+
+  <%= yield %>
+
+  <% @posts.each do |post| %>
+      <h2><%= link_to post.titlle, post %></h2>
+  <% end %>
+
+  <%= link_to "Posts", posts_path %>
+</body>
+</html>
