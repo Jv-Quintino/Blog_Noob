@@ -4,7 +4,7 @@
 
 <h2>Aqui você encontra vários posts de histórias de noobs do mundo inteiro!!</h2>
 
-<div id="posts">
+<div id="posts"> 
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
@@ -13,7 +13,7 @@
   <% end %>
 </div>
 
-<%= link_to "Novo post Noob", new_post_path %>
+<%= link_to "Novo post Noob", new_post_path, class: "custom-button" %>
 <p> </p>
 <%= link_to "Voltar", root_path %>
  

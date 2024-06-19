@@ -1,9 +1,12 @@
 body {
     background: linear-gradient(45deg, #636ceb, #7c7c7c);
-    text-align: center; /* Centraliza todo o texto no corpo */
+    text-align: center; 
   }
-h1, h2, h3 {
+h1, h2 {
     color: black;
+}
+h3 {
+  color: red;
 }
 a {
     color: #ffffff; 
@@ -11,7 +14,25 @@ a {
   }
   
   a:hover {
-    color: #ffdd57; 
+    color: #ffdd57;
     text-decoration: underline; 
   }
+
+  .custom-button {
+    background-color: #5aad6c; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+  }
+
+  
+  
+  
   
